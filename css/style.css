@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #FFFFFF;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Manrope', sans-serif;
+    background-color: #000000;
+    font: 16px/28px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+button {
+    display: block;
+    border: none;
+    background-color: transparent;
+    font: inherit;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.title__section {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 52px;
+    line-height: 64px;
+    letter-spacing: 0.6px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.btn__primary {
+    padding: 12px 24px;
+    font-weight: 600;
+    background-color: #EE8313;
+}
+
+.btn__secondary {
+    padding: 12px 24px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    line-height: 24px;
+    color: #EE8313;
+    border: 1px solid #EE8313;
+}
+
+.btn__primary:hover {
+    background-color: #EF5E10;
+}
+
+/* Header */
+#header-section {
+    padding: 40px 0 107px;
+}
+
+.header {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.header__logo-img,
+.footer__about-img {
+    width: 48px;
+    height: 48px;
+}
+
+.nav__main {
+    /* пункты меню уехали в левую сторону */
+    margin-left: auto;
+}
+
+.nav__main-list {
+    display: flex;
+    gap: 48px;
+    margin-right: 72px;
+}
+
+.nav__main-link:hover {
+    color: #EE8313;
+}
+
+/* Banner */
+
+#banner__section {
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.banner {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    max-width: 475px;
+    padding-top: 45px;
+    overflow: hidden;
+}
+
+.banner__header {
+    font-size: 52px;
+    line-height: 64px;
+    letter-spacing: 0.6px;
+}
+
+.banner__text {
+    margin: 32px 0 48px;
+    font-size: 17px;
+    color: rgb(255 255 255 / 80%);
+
+}
+
+.banner__links-wrap {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 40px;
+}
+
+.banner__fetures-text {
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.banner__fetures-text:first-child {
+    margin-right: 40px;
+}
+
+.banner__fetures-text-strong {
+    margin-right: 16px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    vertical-align: sub;
+}
+
+.banner__img {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    /* background-color: red; */
+}
+
+.banner__img::before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    width: 96%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: url('../img/auto_head.png');
+    background-repeat: no-repeat;
+}
+
+.banner__img::after {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    width: 75%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: rgb(52 52 52 / 30%)
+}
+
+/* RENT */
+#rent__section {
+    padding: 120px 0;
+}
+
+.rent-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.rent {
+    position: relative;
+    height: 524px;
+    font-weight: 600;
+    background: url('../img/supercars.jpg');
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rent:nth-child(2) {
+    background: url('../img/sportcars.jpg');
+}
+
+.rent:nth-child(3) {
+    background: url('../img/suv.jpg');
+}
+
+.rent:nth-child(4) {
+    background: url('../img/supersuv.jpg');
+}
+
+.rent__name {
+    position: absolute;
+    top: 48px;
+    left: 48px;
+    font-size: 40px;
+    letter-spacing: 0.6px;
+}
+
+.rent__link {
+    position: absolute;
+    bottom: 48px;
+    right: 60px;
+    padding-right: 30px;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.rent__link:hover {
+    color: #FFCC2C;
+}
+
+.rent__link::after {
+    position: absolute;
+    content: '';
+    top: 10%;
+    right: 0px;
+    width: 8px;
+    height: 16px;
+    background: url('../img/arrow.png');
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(50%);
+}
+
+/* SERVICES */
+
+#services__section {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    padding-bottom: 120px;
+}
+
+.services__section-title {
+    margin-bottom: 66px;
+    text-align: left;
+}
+
+.services__wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.services {}
+
+.services-img {
+    margin-bottom: 24px;
+}
+
+.services__title {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.services__text {
+    letter-spacing: 0.006em;
+    color: rgb(255 255 255 / 80%);
+}
+
+/* DESTINATION */
+#destination__section {
+    padding-bottom: 162px;
+}
+
+.destination__section-title {
+    width: 590px;
+    margin: 0 auto 40px;
+}
+
+/* .title__section {} */
+
+.destination__wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.destination {
+    background-color: #131313;
+    border: 1px solid #171717;
+}
+
+
+.destination__info {
+    padding: 24px;
+}
+
+.destination__tittle {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.destination__text {
+    margin: 10px 0 25px;
+    color: rgb(255 255 255 / 80%);
+}
+
+.destination__price {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 17px;
+    position: relative;
+    padding-left: 42px;
+}
+.destination__price::before {
+    position: absolute;
+    content: '';
+   background-image: url('../img/cars.png');
+   background-repeat: no-repeat;
+   top: 50%;
+   left: 0;
+   width: 30px;
+   height: 30px;
+   transform: translateY(-50%);   
+    
+}
+.destination__link {
+    color: #EE8313;
+}
+.destination__link:hover {
+    color: #EF5E10;
+}
+
+/* Location */
+
+#location__section {
+    padding-bottom: 102px;
+}
+
+/* Footer */
+#footer__section {
+    padding-top: 40px;
+    background-color: #1F1905;;
+}
+.footer__main {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 55px;
+}
+/* .footer__about {
+} */
+.footer__logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin-bottom: 64px;
+    font-weight: 600;
+}
+
+/* .footer__logo-header {
+} */
+.footer__about-text {
+    max-width: 235px;
+    font-size: 18px;
+    line-height: 32px;
+}
+.footer__nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+    margin: 40px 100px 0 auto;
+}
+/* .footer__nav {
+} */
+.footer__nav-header {
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 20px;
+}
+/* .footer__nav-list {
+} */
+.footer__nav-item {
+    margin-bottom: 28px;
+    line-height: 20px;
+
+}
+.footer__nav-link {
+    color: rgb(255 255 255 / 80%);
+}
+.footer__nav-link:hover {
+    color: #EE8313;
+}
+.footer__social {
+    margin-top: 32px;
+}
+.footer__social-link {
+    display: block;
+    width: 120px;
+    height: 30px;
+    margin-bottom: 45px;
+    background: url('../img/facebook.svg') 50%/cover no-repeat;
+}
+.footer__social-link:nth-child(2) {
+    background-image: url('../img/insta.svg');
+}
+.footer__social-link:nth-child(3) {
+    background-image: url('../img/youtube.svg');
+    margin-bottom: 0;
+}
+.footer__copy {
+    background-color: #EE8313;
+    padding: 20px 0;
+
+}
+.footer__copy-text {
+    text-align: center;
+}
